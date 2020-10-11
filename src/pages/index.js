@@ -8,7 +8,7 @@ import { rhythm } from '../utils/typography';
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
-  const bio = data.resumeXml.content
+  const bio = data.bio.content
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -66,7 +66,7 @@ export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
-    resumeXml(name: {in: "bio"}) {
+    bio: resumeXml(name: {eq: "bio"}) {
       content
     }
     site {
