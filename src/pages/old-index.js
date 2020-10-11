@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
+import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
@@ -8,21 +9,11 @@ import { rhythm } from '../utils/typography';
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const posts = data.allMarkdownRemark.edges;
-  const bio = data.resumeXml.content
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <div
-        style={{
-          display: `flex`,
-          marginBottom: rhythm(2.5),
-        }}
-      >
-        <p>
-          {bio}
-        </p>
-      </div>
+      <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
         return (
@@ -66,9 +57,6 @@ export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
-    resumeXml(name: {in: "bio"}) {
-      content
-    }
     site {
       siteMetadata {
         title
