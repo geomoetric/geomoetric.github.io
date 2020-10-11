@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+<resume>
+
+  <meta>
+    <title>Eric Moe ⁂ Portfolio</title>
+    <name>Eric Moe</name>
+    <summary>Portfolio</summary>
+    <desc>The design portfolio of Eric Moe</desc>
+    <url>https://ericmoe.co</url>
+  </meta>
+
+  <bio>I am a designer with over four years of experience doing everything from magazine spreads to vehicle wraps to outdoor billboards. By using new technologies with classic craftsmanship, I work to create designs that excite and engage people. In the workplace I often find myself filling in gaps and thinking on my feet. I have worked full time, part time, remote, and freelance positions, but I prefer the dynamics and creativity of working on a team.</bio>
+
+  <education>
+    <header>Education</header>
+    <subhead>The University of Texas at Austin</subhead>    
+    <when>Aug ’15–May ’19</when>
+    <where>Austin, TX</where>
+    <ul>
+      <li>Bachelor of Fine Arts in Design from the School of Design &amp; Creative Tech.</li>
+      <li>Certificate in Computer Science from the Dept. of Computer Science.</li>
+      <li>Graphic designer and student associate for Longhorn Startup Lab.</li>
+    </ul>
+  </education>
+
+  <experience>
+    <cf>
+      <where>Capital Factory</where>
+      <when>May ‘18–Present</when>
+      <role>Graphic Designer</role> 
+      <ul>
+        <li>Extended the digital and visual identity of Capital Factory’s brand.</li>
+        <li>Launched the graphics for Capital Factory’s Dallas Grand Opening.</li>
+        <li>Connected members and staff to designers and design opportunities.</li>
+      </ul>
+    </cf>
+
+    <ut>
+      <where>UT Liberal Arts Life &amp; Letters Magazine</where>  
+      <when>May ‘16–May ‘19</when>
+      <role>Graphic Designer</role>  
+      <ul>
+        <li>Designed editorial illustrations for Life and Letters magazine articles.</li>
+        <li>Created UT branded print and web media for Liberal Arts Development.</li>
+        <li>Coordinated with every department to design a College Impact Report.</li>
+      </ul>
+    </ut>
+
+    <wkrm>
+      <where>wkrm Design</where>  
+      <when>Aug ‘17–Dec ’17</when>
+      <role>Studio Manager</role>   
+      <ul>
+        <li>Managed day to day operations of UT’s student-led design studio.</li>
+        <li>Won all client pitches and led teams for two of the four fall projects.</li>
+        <li>Formed a studio store and curated design projects to sell online.</li>
+      </ul>
+    </wkrm>
+
+    <mccombs>
+      <where>McCombs School of Business MSTC Program</where>
+      <when>Jul ‘17–Aug ‘17</when>
+      <role>Graphic Designer</role>    
+      <ul>
+        <li>Coded responsive HTML5 web ads for the Google Display Network.</li>
+        <li>Generated hundreds of static advertisements and branded assets.</li>
+        <li>Supported advertising and tech firms in integrating the ads online.</li>
+      </ul>
+    </mccombs>
+  </experience>
+
+  <contact>
+    <phone>512.914.4921</phone>
+    <email>moe@ericmoe.co</email>
+    <home>Austin, TX</home>
+  </contact>
+
+  <portfolio>
+    <site>ericmoe.co</site>
+  </portfolio>
+
+  <honors>
+    <eagle>Eagle Scout</eagle>
+    <billbrd>AISD Student-Designed Billboard Contest Winner</billbrd> 
+    <gold>Scholastic Art &amp; Writing Awards Gold Key Portfolio</gold>
+    <schol>Michael Aubrey Jones Endowed Art Scholarship</schol>
+  </honors>
+
+  <service>
+    <aiga>2018 President of AIGA at UT Austin</aiga>
+    <toast>2020 VP of Membership at CG Toastmasters</toast>
+  </service>
+
+  <skills>
+    <des>
+      <ai>Adobe Illustrator</ai>
+      <ps>Photoshop</ps>
+      <id>InDesign</id>
+      <ae>After Effects</ae>
+    </des>
+
+    <dev>
+      <html>HTML 5</html>
+      <css>CSS</css>
+      <js>Javascript</js>
+      <react>React</react>
+      <wp>Wordpress</wp>
+      <git>GIT</git>
+      <processing>Processing</processing>
+      <py>Python</py>
+      <vim>Vim</vim>
+    </dev>
+
+    <ux>
+      <sketch>Sketch App</sketch>
+      <invision>InVision</invision>
+      <framer>Framer</framer>
+    </ux>
+
+    <business>
+      <google>G-Suite</google>
+      <slack>Slack</slack>
+      <hub>Hubspot</hub>
+    </business>
+
+    <art>
+      <illu>Illustration</illu>
+      <paint>Painting</paint>
+      <screen>Screen Printing</screen>
+    </art>
+
+    <threedee>
+      <blend>Blender</blend>
+      <rhino>Rhino</rhino>
+    </threedee>
+  </skills>
+
+  <speaking></speaking>
+  <press></press>
+  <bibliography></bibliography>
+  <projects></projects>
+  <exhibition></exhibition>
+
+  <social>
+      <email>mailto:moe@ericmoe.co</email>
+      <dribbble>https://dribbble.com/geomoetric/</dribbble>
+      <linkedin>https://www.linkedin.com/in/geomoetric</linkedin>
+      <insta>https://www.instagram.com/geomoetric/</insta>
+      <medium>https://medium.com/@geomoetric/</medium>
+      <twitter>https://twitter.com/geomoetric</twitter>
+      <tumblr>https://geomoetric.tumblr.com/</tumblr>
+      <pinterest>https://www.pinterest.com/geomoetric/</pinterest>
+      <reddit>https://www.reddit.com/user/geomoetric/</reddit>
+      <github>https://github.com/geomoetric</github>
+      <codepen>https://codepen.io/geomoetric/</codepen>
+      <behance>https://www.behance.net/EricMoe</behance>
+      <spotify>https://open.spotify.com/user/geomoetric</spotify>
+      <facebook>https://www.facebook.com/geomoetric</facebook>
+      <letterboxd>https://letterboxd.com/geomoetric/</letterboxd>
+      <goodreads>https://www.goodreads.com/geomoetric</goodreads>
+  </social>
+</resume>

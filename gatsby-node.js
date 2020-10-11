@@ -62,3 +62,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+// Test for plugins...
+exports.onPreInit = () => {
+  console.log("Testing plugins...")
+}
