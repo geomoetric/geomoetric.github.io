@@ -18,25 +18,29 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="Portfolio" />
 
         <div className="div1">
-          <h1>{siteTitle}</h1>
+          <h1 className="mybrand">{siteTitle}</h1>
         </div>
 
         <div className="header"></div>
 
-        <div className="div3">
-          <p>
-            {bio}
-          </p>
+        <div className="div3 small">
+        <p>Eric Moe is a designer with several years of experience working in digital design, event production, and brand strategy.</p>
+        <p>Born and raised in Austin, Eric combines classic craft with modern-day technologies.</p>
+        <p>As <a href="https://www.capitalfactory.com/">Captial Factory</a>'s sole designer, Eric works to support leading startups and corporate partners innovating in the <a href="https://austinstartups.com/the-texas-startup-manifesto-42f06f2a7075">Lone Star State</a>.</p>
         </div>
       
         <div className="div4">
           <Img fluid={data.file.childImageSharp.fluid} alt="A test image" />
         </div>
-
+        
+        <div classname="caption">
+          <figcaption>Signage, Various, Austin Startup Crawl, Austin, Texas, 2019. Design:&nbsp;Eric&nbsp;Moe</figcaption>
+        </div>
+    
         <div className="footer"></div>
 
         <div className="div5">
-          <span>Resume</span>
+          <span><a href={linkedin}>Resume</a></span>
         </div>
         <div className="div6">
           <span><a href="https://dribbble.com/geomoetric/about">@geomoetric</a><br /></span>
@@ -91,7 +95,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    file(relativePath: { eq: "test.png" }) {
+    file(relativePath: { eq: "crawl.jpg" }) {
       childImageSharp {
         fluid {
           base64
