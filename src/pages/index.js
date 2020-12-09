@@ -9,6 +9,7 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.allResumeXml.nodes[0].xmlChildren[1].content;
   const bio = data.allResumeXml.nodes[1].content;
   const email = data.allResumeXml.nodes[14].xmlChildren[0].content;
+  const phone = data.allResumeXml.nodes[4].xmlChildren[3].content;
   const dribbble = data.allResumeXml.nodes[14].xmlChildren[1].content;
   const insta = data.allResumeXml.nodes[14].xmlChildren[3].content;
   const linkedin = data.allResumeXml.nodes[14].xmlChildren[2].content;
@@ -40,12 +41,12 @@ const BlogIndex = ({ data, location }) => {
         <div className="footer"></div>
 
         <div className="div5">
-          <span><a href={linkedin}>Resume</a></span>
+          <span>Based in <a href="https://www.austintexas.org/">Austin, Texas</a>.</span>
         </div>
         <div className="div6">
           <span><a href="https://dribbble.com/geomoetric/about">@geomoetric</a><br /></span>
           <span><a href={email}>moe@ericmoe.co</a><br /></span>
-          <span><a href="https://www.austintexas.org/">Austin, Texas</a><br /></span>
+          <span><a href={phone}>512.766.5922</a></span>
         </div>
         <div className="div7">
           <span><a href={insta}>Instagram</a><br /></span>
