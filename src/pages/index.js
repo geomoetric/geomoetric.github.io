@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from "gatsby-image" // to take image data and render it
-
 import SEO from '../components/seo';
+import Album from '../components/album';
 import "../styles/global.css";
 
 const BlogIndex = ({ data, location }) => {
@@ -29,15 +29,10 @@ const BlogIndex = ({ data, location }) => {
         <p>Born and raised in Austin, Eric combines classic craft with modern-day technologies.</p>
         <p>As <a href="https://www.capitalfactory.com/">Capital Factory</a>'s sole designer, Eric works to support leading startups and corporate partners innovating in the <a href="https://austinstartups.com/the-texas-startup-manifesto-42f06f2a7075">Lone Star State</a>.</p>
         </div>
-      
-        <div className="div4">
-          <Img fluid={data.file.childImageSharp.fluid} alt="A test image" />
-        </div>
+     
+       <Album /> 
         
-        <div classname="caption">
-          <figcaption>Signage, Various, Austin Startup Crawl, Austin, Texas, 2019. Design:&nbsp;Eric&nbsp;Moe</figcaption>
-        </div>
-    
+
         <div className="footer"></div>
 
         <div className="div5">

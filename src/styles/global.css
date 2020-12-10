@@ -69,6 +69,7 @@
 .header { grid-area: 1 / 1 / 2 / 5; }
 .footer { grid-area: 5 / 1 / 6 / 5; }
 .caption { grid-area: 4 / 1 / 5 / 2; }
+.page { grid-area: 2 / 1 / 5 / 5; }
 
 .div1,
 .div2,
