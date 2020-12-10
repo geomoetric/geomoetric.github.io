@@ -384,7 +384,8 @@ img {
   object-fit: cover;
 }
 
-.gatsby-image-wrapper {
+.gatsby-image-wrapper,
+.containerCss {
   width: 100%;
   height: 100%;
 }

@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import { useEmblaCarousel } from "embla-carousel/react";
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from "gatsby-image"
 
 const viewportCss = {
   overflow: 'hidden',
@@ -32,11 +34,36 @@ const EmblaCarousel = ({ slides }) => {
 
   const captions = [ 
     "Signage, Various, Austin Startup Crawl, Austin, Texas, 2019. Design: Eric Moe", 
-    "boom", 
-    "bam"
+    "Website, Capital Factory House at SXSW, Austin, Texas, 2020. Design: Austin Waldo & Eric Moe.",
+    "Interactive Videoconferencing Map, STARTUPS, Austin Startup Crawl, Austin, Texas, 2020.",
+    "Graphic T-Shirts & Custom Socks for Capital Factory, Texas, 2018–2019.",
+    "Logos & Brand Systems, Austin Startup Crawl, Fed Supernova, Longhorn Startup, 2018–2020.",
+    "Product Design, Sabre: Intuitive Safety Razor, Austin, Texas, 2016.",
+    "Poster, Springs, Austin, Texas, 2020."
   ];
 
   const figcap = captions[selectedIndex];
+
+const data = useStaticQuery(graphql`
+  query {
+    allFile(filter: {extension: {regex: " /(jpg)|(png)|(jpeg)|(svg)/"}}) {
+      edges {
+        node {
+          base
+          childImageSharp {
+            fluid {
+              aspectRatio
+              base64
+              src
+              srcSet
+              sizes
+            }
+          }
+        }
+      }
+    }
+  }
+`)
 
   useEffect(() => {
     if (!embla) return;
@@ -48,10 +75,36 @@ const EmblaCarousel = ({ slides }) => {
   return (
     <>
         <div className="div4" style={viewportCss} ref={viewportRef}>
-          <div style={containerCss} >
-            <div style={slideCss}>Slide 1</div>
-            <div style={slideCss}>Slide 2</div>
-            <div style={slideCss}>Slide 3</div>
+          <div style={containerCss} className="containerCss">
+
+            <div style={slideCss}>
+              <Img fluid={data.allFile.edges[7].node.childImageSharp.fluid} alt="test"/>
+            </div>
+
+            <div style={slideCss}>
+              <Img fluid={data.allFile.edges[6].node.childImageSharp.fluid} alt="test"/>
+            </div>
+
+            <div style={slideCss}>
+              <Img fluid={data.allFile.edges[8].node.childImageSharp.fluid} alt="test"/>
+            </div>
+
+            <div style={slideCss}>
+              <Img fluid={data.allFile.edges[10].node.childImageSharp.fluid} alt="test"/>
+            </div>
+
+            <div style={slideCss}>
+              <Img fluid={data.allFile.edges[9].node.childImageSharp.fluid} alt="test"/>
+            </div>
+
+            <div style={slideCss}>
+              <Img fluid={data.allFile.edges[5].node.childImageSharp.fluid} alt="test"/>
+            </div>
+
+            <div style={slideCss}>
+              <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} alt="test"/>
+            </div>
+
           </div>
         </div>
 
@@ -70,4 +123,7 @@ const EmblaCarousel = ({ slides }) => {
 };
 
 export default EmblaCarousel;
+
+
+
 
