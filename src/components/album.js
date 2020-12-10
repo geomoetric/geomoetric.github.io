@@ -56,13 +56,15 @@ const EmblaCarousel = ({ slides }) => {
         </div>
 
     <div className="caption">
-      <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
-      <br /> 
-      <figurecaption>
-        {figcap}
-      </figurecaption>
-    </div>
+      <div className="arrows">
+        <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+      </div>
+        <br /> 
+        <figurecaption className="mainCap">
+          {figcap}
+        </figurecaption>
+      </div>
     </>
   );
 };
