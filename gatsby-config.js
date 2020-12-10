@@ -3,7 +3,7 @@ module.exports = {
     title: `Eric Moe ⁂ Portfolio`,
     author: {
       name: `Eric Moe`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: ``,
     },
     description: `The design portfolio of Eric Moe`,
     siteUrl: `https://ericmoe.co/`,
@@ -34,7 +34,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1920,
             },
           },
           {
@@ -58,18 +58,18 @@ module.exports = {
       },
     },
     // `gatsby-plugin-feed`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `Gatsby Starter Blog`,
-    //     short_name: `GatsbyJS`,
-    //     start_url: `/`,
-    //     background_color: `#ffffff`,
-    //     theme_color: `#663399`,
-    //     display: `minimal-ui`,
-    //     icon: `content/assets/gatsby-icon.png`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Eric Moe's Portfolio`,
+        short_name: `Moe`,
+        start_url: `/`,
+        background_color: `#f7f9fc`,
+        theme_color: `#4967AA`,
+        display: `minimal-ui`,
+        icon: `content/assets/clarendonAst.svg`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     // {
     //   resolve: `gatsby-plugin-typography`,
