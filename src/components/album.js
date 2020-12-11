@@ -45,24 +45,85 @@ const EmblaCarousel = ({ slides }) => {
   const figcap = captions[selectedIndex];
 
 const data = useStaticQuery(graphql`
-  query {
-    allFile(filter: {extension: {regex: " /(jpg)|(png)|(jpeg)|(svg)/"}}) {
-      edges {
-        node {
-          base
-          childImageSharp {
-            fluid {
-              aspectRatio
-              base64
-              src
-              srcSet
-              sizes
-            }
-          }
-        }
+query {
+  one: file(relativePath: {eq: "1.jpg"}) {
+    childImageSharp {
+      fluid {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
       }
     }
   }
+  two: file(relativePath: {eq: "2.png"}) {
+    childImageSharp {
+      fluid {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
+      }
+    }
+  }
+  three: file(relativePath: {eq: "3.png"}) {
+    childImageSharp {
+      fluid {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
+      }
+    }
+  }
+  four: file(relativePath: {eq: "4.png"}) {
+    childImageSharp {
+      fluid {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
+      }
+    }
+  }
+  five: file(relativePath: {eq: "5.png"}) {
+    childImageSharp {
+      fluid {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
+      }
+    }
+  }
+  six: file(relativePath: {eq: "6.png"}) {
+    childImageSharp {
+      fluid {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
+      }
+    }
+  }
+  seven: file(relativePath: {eq: "7.png"}) {
+    childImageSharp {
+      fluid {
+        base64
+        aspectRatio
+        src
+        srcSet
+        sizes
+      }
+    }
+  }
+}
 `)
 
   useEffect(() => {
@@ -78,31 +139,31 @@ const data = useStaticQuery(graphql`
           <div style={containerCss} className="containerCss">
 
             <div style={slideCss}>
-              <Img fluid={data.allFile.edges[7].node.childImageSharp.fluid} alt="test"/>
+              <Img fluid={data.one.childImageSharp.fluid} alt="test"/>
             </div>
 
             <div style={slideCss}>
-              <Img fluid={data.allFile.edges[6].node.childImageSharp.fluid} alt="test"/>
+              <Img fluid={data.two.childImageSharp.fluid} alt="test"/>
             </div>
 
             <div style={slideCss}>
-              <Img fluid={data.allFile.edges[8].node.childImageSharp.fluid} alt="test"/>
+              <Img fluid={data.three.childImageSharp.fluid} alt="test"/>
             </div>
 
             <div style={slideCss}>
-              <Img fluid={data.allFile.edges[10].node.childImageSharp.fluid} alt="test"/>
+              <Img fluid={data.four.childImageSharp.fluid} alt="test"/>
             </div>
 
             <div style={slideCss}>
-              <Img fluid={data.allFile.edges[9].node.childImageSharp.fluid} alt="test"/>
+              <Img fluid={data.five.childImageSharp.fluid} alt="test"/>
             </div>
 
             <div style={slideCss}>
-              <Img fluid={data.allFile.edges[5].node.childImageSharp.fluid} alt="test"/>
+              <Img fluid={data.six.childImageSharp.fluid} alt="test"/>
             </div>
 
             <div style={slideCss}>
-              <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} alt="test"/>
+              <Img fluid={data.seven.childImageSharp.fluid} alt="test"/>
             </div>
 
           </div>
