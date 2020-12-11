@@ -36,8 +36,8 @@ const EmblaCarousel = ({ slides }) => {
     "Signage, Various, Austin Startup Crawl, Austin, Texas, 2019. Design: Eric Moe", 
     "Website, Capital Factory House at SXSW, Austin, Texas, 2020. Design: Austin Waldo & Eric Moe.",
     "Interactive Videoconferencing Map, STARTUPS, Austin Startup Crawl, Austin, Texas, 2020. Design: Eric Moe",
+    "Logos & Brand, Austin Startup Crawl, Fed Supernova, Longhorn Startup, 2018–20. Design: Eric Moe",
     "Graphic T-Shirts & Custom Socks for Capital Factory, Texas, 2018–2019. Design: Eric Moe",
-    "Logos & Brand Systems, Austin Startup Crawl, Fed Supernova, Longhorn Startup, 2018–2020. Design: Eric Moe",
     "Product Design, Sabre: Intuitive Safety Razor, Austin, Texas, 2016. Design: Eric Moe",
     "Poster, Springs, Austin, Texas, 2020. Design: Eric Moe"
   ];
