@@ -27,7 +27,6 @@ const BlogIndex = ({ data, location }) => {
         <div className="div3 small">
         <p>Eric Moe is a designer with several years of experience working in digital design, event production, and brand strategy.</p>
         <p>Born and raised in Austin, Eric combines classic craft with modern-day technologies.</p>
-        <p>As <a href="https://www.capitalfactory.com/">Capital Factory</a>'s sole designer, Eric works to support leading startups and corporate partners innovating in the <a href="https://austinstartups.com/the-texas-startup-manifesto-42f06f2a7075">Lone Star State</a>.</p>
         </div>
      
        <Album /> 
