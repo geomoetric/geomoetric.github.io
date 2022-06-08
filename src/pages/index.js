@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
         <div className="footer"></div>
 
         <div className="div5">
-          <span>Based in <a href="https://www.austintexas.org/">Austin, Texas</a>.</span>
+          <span>Based in <a href="https://www.google.com/maps?hl=en&q=30.263430,+-97.769741">Austin, Texas</a>.</span>
         </div>
         <div className="div6">
           <span><a href="https://dribbble.com/geomoetric/about">@geomoetric</a><br /></span>
@@ -43,9 +43,9 @@ const BlogIndex = ({ data, location }) => {
           <span><a href={phone}>512.766.5922</a></span>
         </div>
         <div className="div7">
+          <span><a href={linkedin}>LinkedIn</a><br /></span>
           <span><a href={insta}>Instagram</a><br /></span>
           <span><a href={dribbble}>Dribbble</a><br /></span>
-          <span><a href={linkedin}>Linkedin</a><br /></span>
         </div>
         <div className="div8">
           <span>Design, words, & code by Eric Moe.<br /></span>
