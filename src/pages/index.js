@@ -25,8 +25,9 @@ const BlogIndex = ({ data, location }) => {
         <div className="header"></div>
 
         <div className="div3 small">
-        <p>Eric Moe is a designer with several years of experience working in digital design, event production, and brand strategy.</p>
-        <p>Born and raised in Austin, Eric combines classic craft with modern-day technologies.</p>
+        <p>Howdy, my name is Eric Moe. I'm a born and raised Austinite who uses design thinking to help people, products and teams realize their full potential. ⁂</p>
+        <p>My career began in design before transitioning to tech, producing everything from websites to magazine spreads to outdoor billboards. I found my design thinking practices could apply to strategy, public speaking, & management and leveraged those skills to move into the tech sector. These days, I keep busy running my award-winning digital department—combining marketing, sales, tech, & design—looking for new opportunities for innovation and growth for my team and our customers.</p>
+        <p>In my free time, I enjoy indoor rock climbing, swimming at Barton Springs, and walking my three rescue dogs.</p>
         </div>
      
        <Album /> 
